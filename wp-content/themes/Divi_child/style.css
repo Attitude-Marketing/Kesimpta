@@ -1,0 +1,133 @@
+/*
+ Theme Name:  kesimpta_child
+ Description:  Child Theme for Kesimpta
+ Author:       Hanane Hassainya
+ Template:     Divi
+ Version:      1.0.0
+*/
+
+/*****Add any custom CSS below this line*****/
+@font-face { font-family: ‘avenir’; src: url(‘Avenir Next.ttc’); }
+
+body {
+	color: #0089B1;
+	font-family: avenir;
+}
+
+h2 {
+	font-size: 36px!important;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: #0089B1;
+	font-weight: 700;
+}
+p {
+	font-size: 29px;
+	line-height: 40px;
+	color: #0089B1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.button {
+	width: 410px;
+	height: 60px;
+	border: 1px solid #0089B1;
+	border: 1px solid #0089B1;
+	border-radius: 70px;
+	opacity: 1;
+	font-size: 20px;
+	line-height: 28px;
+	padding: 17px 34px;
+	color: #0089B1;
+	transition: all .5s ease-out;
+	cursor: pointer;;
+}
+.button:hover {
+	padding: 17px 34px!important;
+    border: 1px solid #fff!important;
+    background-color: #0089B1!important;
+    color: #fff;
+    transition: all .5s ease-out;
+	}    
+.button:after {
+	content: none;
+}
+#main-header, #main-header .et-fixed-header {
+	background-color: #fff;
+}
+#main-header.et-fixed-header {
+	box-shadow: none!important;
+}
+.wpml-ls-display {
+	color: #0089B1;
+}
+/* BOUTON RDV MENU */
+.menu-button a {
+	height: 50px;
+	border: 1px solid #0089B1;
+	border-radius: 70px;
+	opacity: 1;
+	font-size: 15px;
+	padding: 17px 34px;
+	color: #0089B1!important;
+}
+.menu-button a:hover {
+	padding: 17px 34px!important;
+    border: 1px solid #fff!important;
+    background-color: #0089B1!important;
+    color: #fff!important;
+    transition: all .5s ease-out;
+	}    
+.height-section {
+	height: 100vh;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+}
+.flex-column {
+	flex-direction: column;
+}
+/* VIDEO ACCUEIL */
+#full-video {
+	height: 100vh;
+
+/* FOOTER */
+}
+.bottom-text {
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+.bottom-text-box {
+	position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+#main-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.menu-menu-footer {
+	display: flex;
+}
+#menu-menu-footer {
+	float: right;
+}
+#et-footer-nav, #footer-bottom {
+	width: 50%;
+}
+.text-list {
+	font-size: 20px!important;
+	line-height: 37px!important;
+}
+sup {
+    font-size: 0.6em!important;
+}
+#full-video {
+	position: relative;
+}
+@media (min-width: 981px) {
+.et_header_style_left .et-fixed-header #et-top-navigation, .et_header_style_split .et-fixed-header #et-top-navigation {
+    padding-bottom: 20px;
+}
