@@ -2417,7 +2417,6 @@ endif;
 
 function et_builder_widgets_init(){
 	$et_pb_widgets = get_theme_mod( 'et_pb_widgets' );
-
 	if ( $et_pb_widgets['areas'] ) {
 		foreach ( $et_pb_widgets['areas'] as $id => $name ) {
 			register_sidebar( array(
