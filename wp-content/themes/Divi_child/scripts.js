@@ -13,6 +13,7 @@ jQuery(document).ready(function( $ ) {
 	$(".et_pb_section").each(function(i) {
 		//title
 		var titles = $(this).find("h2");
+		var subtitles = $(this).find("h3");
 		//textes
 		var texts = $(this).find("p");
 		//li
@@ -32,6 +33,7 @@ jQuery(document).ready(function( $ ) {
 		var tl = new TimelineMax();
 		//animations for content
 		tl.fromTo(titles, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase });
+		tl.fromTo(subtitles, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase });
 		tl.fromTo(texts, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase });
 		tl.staggerFromTo(listItems, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase },0.2);
 		tl.fromTo(ctas, 0.25, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase });
@@ -44,7 +46,7 @@ jQuery(document).ready(function( $ ) {
 
 		new ScrollMagic.Scene({
 			triggerElement: this,
-			triggerHook: 0.15,
+			triggerHook: 0.5,
 			reverse: false
 		})
 		.setTween(tl)
