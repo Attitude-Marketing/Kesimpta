@@ -184,14 +184,20 @@ sup {
 	top: 50%!important;
 }
 .little-cta {
-	position: absolute;
-    left: 45%;
+	position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
     top: -50px;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
     color: #0089B1;
+    text-align: center;
+    width: 100%;
+}
+.little-cta .box-cta{
+	position: relative;
 }
 .box-little-cta {
 	height: 0;
