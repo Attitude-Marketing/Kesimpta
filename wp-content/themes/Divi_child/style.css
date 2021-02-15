@@ -7,11 +7,19 @@
 */
 
 /*****Add any custom CSS below this line*****/
-@font-face { 
-	font-family: "avenir"; 
-	src: url("AvenirNextLTPro Regular.otf") format("otf"),
-		 url("Avenir Next") format("ttf");
+@font-face {
+    font-family: 'avenir';
+    src: url('fonts/Avenir/AvenirNextLTPro-Regular.eot');
+    src: url('fonts/Avenir/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Avenir/AvenirNextLTPro-Regular.woff2') format('woff2'),
+        url('fonts/Avenir/AvenirNextLTPro-Regular.woff') format('woff'),
+        url('fonts/Avenir/AvenirNextLTPro-Regular.ttf') format('truetype'),
+        url('fonts/Avenir/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 
 
 body {
