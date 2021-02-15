@@ -328,16 +328,8 @@ sup {
 	#top-menu li a {
 		font-size: 0!important;
 	}
-	.menu-button a {
-		border: 1px solid #0089B1;
-		border-radius:50%;
-		width: 40px;
-		height: 40px;
-		
-	}
+
 }
-
-
 
 /*Menu*/
 .menu-image{

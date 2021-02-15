@@ -335,12 +335,19 @@ sup {
 		height: 40px;
 		
 	}
+/*	.menu-button a:hover, .menu-button a {
+    border: none;
+    background-color: transparent!important;
+	}*/
+
+<<<<<<< HEAD
 }
-
-
 
 /*Menu*/
 .menu-image{
+=======
+	.menu-image{
+>>>>>>> 36fb70736b143f82ea744ac4b34fe007df8a3ade
 	display: inline-block !important;
 }
 .hovered-image{
@@ -352,6 +359,7 @@ sup {
 .nav:hover .hovered-image{
 	display: inline-block !important;
 }
+<<<<<<< HEAD
 .menu-image-hover-wrapper{
 	position: relative;
 	top: -3px;	
@@ -378,3 +386,11 @@ sup {
 		width: 98%;
 	}
 }
+=======
+.menu-image-hovered{
+	    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+}
+>>>>>>> 36fb70736b143f82ea744ac4b34fe007df8a3ade
