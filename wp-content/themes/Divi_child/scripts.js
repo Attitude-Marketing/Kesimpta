@@ -56,6 +56,7 @@ jQuery(document).ready(function( $ ) {
 	//Scroll to animations
 	$(".box-cta a").click(function(e) {
     e.preventDefault();
+    console.log("prevented!");
     var scrollTo = $(this).attr("href");
     $('html,body').animate({scrollTop: $(scrollTo).offset().top},'slow');
 });
