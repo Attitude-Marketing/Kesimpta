@@ -221,15 +221,15 @@ function et_divi_load_scripts_styles(){
 
 	wp_enqueue_script( 'et-jquery-touch-mobile', $template_dir . '/includes/builder/scripts/jquery.mobile.custom.min.js', array( 'jquery' ), $theme_version, true );
 
-	if ( et_load_unminified_scripts() ) {
-		$dependencies_array[] = 'et-jquery-touch-mobile';
-	}
+	// if ( et_load_unminified_scripts() ) {
+	// 	$dependencies_array[] = 'et-jquery-touch-mobile';
+	// }
 
-	wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom' . $script_suffix . '.js', $dependencies_array , $theme_version, true );
-	wp_localize_script( 'divi-custom-script', 'DIVI', array(
-		'item_count'  => esc_html__( '%d Item', 'divi' ),
-		'items_count' => esc_html__( '%d Items', 'divi' ),
-	) );
+	// wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom' . $script_suffix . '.js', $dependencies_array , $theme_version, true );
+	// wp_localize_script( 'divi-custom-script', 'DIVI', array(
+	// 	'item_count'  => esc_html__( '%d Item', 'divi' ),
+	// 	'items_count' => esc_html__( '%d Items', 'divi' ),
+	// ) );
 
 	if ( 'on' === et_get_option( 'divi_smooth_scroll', false ) ) {
 		wp_enqueue_script( 'smooth-scroll', $template_dir . '/js/smoothscroll.js', array( 'jquery' ), $theme_version, true );
