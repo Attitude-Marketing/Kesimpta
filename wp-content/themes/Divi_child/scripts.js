@@ -54,12 +54,25 @@ jQuery(document).ready(function( $ ) {
 	});
 	
 	//Scroll to animations
-	$(".box-cta a").click(function(e) {
-    e.preventDefault();
-    console.log("prevented!");
-    var scrollTo = $(this).attr("href");
-    $('html,body').animate({scrollTop: $(scrollTo).offset().top},'slow');
-});
+		$(".box-cta a").click(function(e) {
+	    e.preventDefault();
+	    console.log("prevented!");
+	    var scrollTo = $(this).attr("href");
+	    $('html,body').animate({scrollTop: $(scrollTo).offset().top},'slow');
+	});
+
+	$(window).scroll(function() {
+		if($("#main-header").hasClass("withBg")){
+			$("#main-header").css("background", "rgba(255,255,255,1)")
+		}
+		if ($(this).scrollTop()  <= 0 ){
+        	$("#main-header").css("background", "rgba(255,255,255,0)")
+    	}
+		else{
+			$("#main-header").addClass("withBg");
+			$("#main-header").css("background", "rgba(255,255,255,1)")
+		}
+	});
 	
 	//end of doc ready
 });

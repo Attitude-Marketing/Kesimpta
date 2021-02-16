@@ -15,3 +15,4 @@ function divi__child_theme_enqueue_scripts(){
 	wp_enqueue_style( 'child-scripts-style', get_stylesheet_directory_uri() . '/scriptsStyles.css' );
 }
 add_action( 'wp_enqueue_scripts', 'divi__child_theme_enqueue_scripts' );
+
