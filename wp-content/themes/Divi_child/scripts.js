@@ -61,18 +61,56 @@ jQuery(document).ready(function( $ ) {
 	    $('html,body').animate({scrollTop: $(scrollTo).offset().top},'slow');
 	});
 
-	$(window).scroll(function() {
-		if($("#main-header").hasClass("withBg")){
-			$("#main-header").css("background", "rgba(255,255,255,1)")
-		}
-		if ($(this).scrollTop()  <= 0 ){
-        	$("#main-header").css("background", "rgba(255,255,255,0)")
-    	}
-		else{
-			$("#main-header").addClass("withBg");
-			$("#main-header").css("background", "rgba(255,255,255,1)")
-		}
-	});
+
+
+
+
+
+
+
+
+$(window).scroll(function(){
+  var fixed = $("#main-header");
+  
+  var fixed_position = $("#main-header").offset().top;
+  var fixed_height = $("#main-header").height();
+
+    var addClass = false;
+    $('.et_pb_section').each(function(){
+
+        var toCross_position = $(this).offset().top;
+        var toCross_height = $(this).height();
+        var toCross_color = $(this).css("background-color");
+        if($(this).css('background-color') === 'rgb(255, 255, 255)'){
+        	toCross_color = "rgba(0, 0, 0, 0)";
+        }
+        if (fixed_position + fixed_height  < toCross_position) {
+            
+        } else if (fixed_position > toCross_position + toCross_height) {
+            toCross_color = "rgba(0, 0, 0, 0)";
+            fixed.css("background-color", toCross_color);
+        } else {
+            addClass = true;
+            fixed.css("background-color", toCross_color);
+        }
+    });
+    if(addClass == true){
+        fixed.addClass('withBg');
+    }else{
+        fixed.addClass('withBg');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 	
 	//end of doc ready
 });
