@@ -290,6 +290,9 @@ sup {
 	.et_pb_section_3 {
 		padding-right: 0!important;
 	}
+	.et_pb_section_4{
+		padding-right: 0 !important;
+	}
 	.buttons-list  {
 		display: flex;
 	    flex-direction: column;
@@ -324,6 +327,8 @@ sup {
 	.wpml-ls-display {
 		font-size: 18px;
 		line-height: 25px;
+		position: relative;
+		top: 3px;
 	}
 	#top-menu li a {
 		font-size: 0!important;
@@ -370,11 +375,15 @@ sup {
 	}
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
 	.et-top-navigation{
 		padding-left: 0;
 	}
 	.clearfix.et_menu_container{
-		width: 98%;
+		width: 100%;
+		padding: 0 15px;
+	}
+	#top-menu li{
+		padding-right: 10px !important;
 	}
 }
