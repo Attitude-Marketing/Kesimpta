@@ -225,12 +225,13 @@ function et_divi_load_scripts_styles(){
 	// 	$dependencies_array[] = 'et-jquery-touch-mobile';
 	// }
 
-	// wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom' . $script_suffix . '.js', $dependencies_array , $theme_version, true );
-	// wp_localize_script( 'divi-custom-script', 'DIVI', array(
-	// 	'item_count'  => esc_html__( '%d Item', 'divi' ),
-	// 	'items_count' => esc_html__( '%d Items', 'divi' ),
-	// ) );
-
+	if(is_user_logged_in()){
+		 wp_enqueue_script( 'divi-custom-script', $template_dir . '/js/custom' . $script_suffix . '.js', $dependencies_array , $theme_version, true );
+		 wp_localize_script( 'divi-custom-script', 'DIVI', array(
+		 	'item_count'  => esc_html__( '%d Item', 'divi' ),
+		 	'items_count' => esc_html__( '%d Items', 'divi' ),
+		 ) );
+	}
 	if ( 'on' === et_get_option( 'divi_smooth_scroll', false ) ) {
 		wp_enqueue_script( 'smooth-scroll', $template_dir . '/js/smoothscroll.js', array( 'jquery' ), $theme_version, true );
 	}

@@ -298,6 +298,13 @@ sup {
 
 }
 /*MOBILE */
+@media (max-width: 767px) {
+.et_pb_section_3 .et_pb_image_wrap img{
+		max-width: none !important;
+		width: unset !important;
+		position: relative !important;
+	} 
+}
 @media (max-width: 980px) {
 	h2 {
 		font-size: 24px!important;
