@@ -340,6 +340,19 @@ sup {
 		height: 40px;
 		
 	}
+	.et_pb_row.et_pb_row_3{
+		width: 100%;
+	}
+	.et_pb_row.et_pb_row_3 .et_pb_column.et_pb_column_1_3.et_pb_column_5{
+		width: 80%;
+		display: block;
+	    position: relative;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.et_pb_row.et_pb_row_3 .et_pb_column.et_pb_column_2_3.et_pb_column_6{
+		padding: 0 15px;
+	}
 }
 
 
