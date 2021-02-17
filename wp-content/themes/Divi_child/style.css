@@ -354,7 +354,7 @@ sup {
 }
 
 .et_pb_section_4 img {
-	max-width: unset !important;
+opacity: 0; 
 }
 
 .buttons-list .button svg {
@@ -574,5 +574,22 @@ sup {
 @media (max-width: 980px) {
 	.et_pb_section_7 .et_pb_row .et_pb_text_inner{
 		margin-bottom: 10%;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	.et_pb_section.et_pb_section_6 .et_pb_row{
+		display: flex !important;
+		flex-direction: row !important;
+	}
+	.et_pb_section.et_pb_section_6 img{
+		max-height: 60vh;
+	}
+}
+@media (max-width: 1200px) {
+	.et_pb_section.et_pb_section_6 .et_pb_row{
+		align-items: flex-start !important;
 	}
 }

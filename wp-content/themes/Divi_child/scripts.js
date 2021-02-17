@@ -40,7 +40,13 @@ jQuery(document).ready(function( $ ) {
 		//animations for imgs (start at 0)
 		tl.fromTo(imgs, globalDuration, {opacity:0, left:globalDistance},{ opacity:1, left: 0, ease: glabalEase },0);
 		tl.fromTo(imgsFromBottom, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase },0);
-		tl.fromTo(imgsFromRight, globalDuration, {opacity:0, left:globalDistance},{ opacity:1, left: 0, ease: glabalEase },0);
+		
+
+		if (window.matchMedia('(min-width: 980px)').matches) {
+	        tl.fromTo(imgsFromRight, globalDuration, {opacity:0, left:"18vw"},{ opacity:1, left: "15vw", ease: glabalEase },0);
+	    } else {
+	        tl.fromTo(imgsFromRight, globalDuration, {opacity:0, left:globalDistance},{ opacity:1, left: 0, ease: glabalEase },0);
+	    }
 		tl.fromTo(imgsPop, globalDuration, {opacity:0, scale:0},{ opacity:1, scale: 1, ease: glabalEase },0);
 
 		new ScrollMagic.Scene({
