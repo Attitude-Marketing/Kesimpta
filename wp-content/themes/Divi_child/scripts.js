@@ -28,8 +28,7 @@ jQuery(document).ready(function( $ ) {
 		var imgsFromRight = $(this).find(".et_pb_image.gsapFromRight img");
 		//images pop
 		var imgsPop = $(this).find(".et_pb_image.gsapPop img");
-
-
+		//Timeline
 		var tl = new TimelineMax();
 		//animations for content
 		tl.fromTo(titles, globalDuration, {opacity:0, top:globalDistance},{ opacity:1, top: 0, ease: glabalEase });
@@ -53,7 +52,7 @@ jQuery(document).ready(function( $ ) {
 		.addTo(ctrl);
 	});
 	
-	//Scroll to animations
+	//Anchor scroll to animations
 		$(".box-cta a").click(function(e) {
 	    e.preventDefault();
 	    console.log("prevented!");
@@ -61,56 +60,38 @@ jQuery(document).ready(function( $ ) {
 	    $('html,body').animate({scrollTop: $(scrollTo).offset().top},'slow');
 	});
 
+	//Nav background on scroll
+	$(window).scroll(function(){
+	  var fixed = $("#main-header");
+	  
+	  var fixed_position = $("#main-header").offset().top;
+	  var fixed_height = $("#main-header").height();
 
+	    var addClass = false;
+	    $('.et_pb_section').each(function(){
 
+	        var toCross_position = $(this).offset().top;
+	        var toCross_height = $(this).height();
+	        var toCross_color = $(this).css("background-color");
+	        if($(this).css('background-color') === 'rgb(255, 255, 255)'){
+	        	toCross_color = "rgba(0, 0, 0, 0)";
+	        }
+	        if (fixed_position + fixed_height  < toCross_position) {
+	            
+	        } else if (fixed_position > toCross_position + toCross_height) {
+	            toCross_color = "rgba(0, 0, 0, 0)";
+	            fixed.css("background-color", toCross_color);
+	        } else {
+	            addClass = true;
+	            fixed.css("background-color", toCross_color);
+	        }
+	    });
+	    if(addClass == true){
+	        fixed.addClass('withBg');
+	    }else{
+	        fixed.addClass('withBg');
+	    }
+	});
 
-
-
-
-
-
-$(window).scroll(function(){
-  var fixed = $("#main-header");
-  
-  var fixed_position = $("#main-header").offset().top;
-  var fixed_height = $("#main-header").height();
-
-    var addClass = false;
-    $('.et_pb_section').each(function(){
-
-        var toCross_position = $(this).offset().top;
-        var toCross_height = $(this).height();
-        var toCross_color = $(this).css("background-color");
-        if($(this).css('background-color') === 'rgb(255, 255, 255)'){
-        	toCross_color = "rgba(0, 0, 0, 0)";
-        }
-        if (fixed_position + fixed_height  < toCross_position) {
-            
-        } else if (fixed_position > toCross_position + toCross_height) {
-            toCross_color = "rgba(0, 0, 0, 0)";
-            fixed.css("background-color", toCross_color);
-        } else {
-            addClass = true;
-            fixed.css("background-color", toCross_color);
-        }
-    });
-    if(addClass == true){
-        fixed.addClass('withBg');
-    }else{
-        fixed.addClass('withBg');
-    }
-});
-
-
-
-
-
-
-
-
-
-
-
-	
 	//end of doc ready
 });
