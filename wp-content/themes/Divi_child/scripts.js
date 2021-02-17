@@ -109,8 +109,6 @@ $(window).scroll(function(){
 
 
 
-
-
 	
 	//end of doc ready
 });
