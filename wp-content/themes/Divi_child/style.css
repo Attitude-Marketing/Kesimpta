@@ -556,3 +556,22 @@ sup {
 		padding-right: 10px !important;
 	}
 }
+
+.et_pb_section_3 .et_pb_text_inner {
+	margin-bottom: 10% !important;
+}
+.et_pb_section_6 h3{
+	padding: 1.5% 0 calc(1.5% + 10px) 0;
+}
+@media (min-width: 981px) {
+	.et_pb_section_7 .et_pb_row{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 980px) {
+	.et_pb_section_7 .et_pb_row .et_pb_text_inner{
+		margin-bottom: 10%;
+	}
+}
