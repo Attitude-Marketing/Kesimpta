@@ -307,7 +307,7 @@
 
 								-->
 								<!-- AddEvent Button code -->
-								<div title="Add to Calendar" class="addeventatc cbtn" style="box-shadow:none!important;"><svg version="1.1" id="calendar_today-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+								<div title="Add to Calendar" class="addeventatc cbtn" id="appointment"style="box-shadow:none!important;"><svg version="1.1" id="calendar_today-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 										 x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 									<style type="text/css">
 										.st0{fill:transparent;}
