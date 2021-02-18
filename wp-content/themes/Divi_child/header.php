@@ -319,9 +319,17 @@
 								    <span id="text-calendar">Create an appointment reminder</span>
 								    <span class="start"></span>
 								    <span class="timezone">America/New_York</span>
-								    <span class="title">[Le titre de l'événement dans le calendrier]</span>
-								    <span class="description">[Description de l'événement]</span>
-								    <span class="location">[L'endroit du rdv. Typiquement une adresse ou alors l'URL du site Web]</span>
+								    <span class="title">Book doctor’s appointment to talk about Kesimpta<sup>®</sup></span>
+								    <span class="description"><br>Today I’m asking my doctor about Kesimpta®. I’ll bring my journal of tracked symptoms to my appointment. <br><br>I can start the conversation by asking:<br>
+
+1. Could Kesimpta be a good treatment for me?<br>
+2. What kind of patients can benefit from Kesimpta?<br>
+3. How does Kesimpta work?<br>
+4. How should I take Kesimpta?<br>
+5. Can I take Kesimpta myself, or does it need to be administered by a doctor?<br>
+6. How is Kesimpta different from other medications?<br>
+7. What factors should I think about when choosing a medication?<br><br></span>
+								   <!--  <span class="location">[L'endroit du rdv. Typiquement une adresse ou alors l'URL du site Web]</span> -->
 								    <span class="recurring">FREQ=MONTHLY;INTERVAL=3;BYMONTHDAY=1</span>
 								</div>
 							<!-- 		<span class="menu-image-title-after menu-image-title">Create an appointment reminder</span></a></li>
