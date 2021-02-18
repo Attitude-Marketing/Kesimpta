@@ -663,6 +663,10 @@ opacity: 0;
 	.et_pb_section_7 .et_pb_row .et_pb_text_inner{
 		margin-bottom: 10%;
 	}
+	.et_pb_section_7 .et_pb_row{
+		width: 100% !important;
+	}
+
 }
 
 
