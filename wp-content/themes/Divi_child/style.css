@@ -722,3 +722,16 @@ opacity: 0;
 .et_header_style_left #et-top-navigation, .et_header_style_left .et-fixed-header #et-top-navigation {
     padding-bottom: 30px !important;
 }
+
+
+/* FIX VIDE) */
+div.et_pb_section.et_pb_section_0 {
+	background-image :url(http://205.204.80.166/~kesimpta/Dev/wp-content/uploads/2021/02/1-750x1120-1.jpg)!important;
+}
+
+@media (max-width: 980px) {
+	div.et_pb_section.et_pb_section_0 {
+	background-image :url(http://205.204.80.166/~kesimpta/Dev/wp-content/uploads/2021/02/1-750x1120-2.jpg)!important;
+
+	}
+} 
